@@ -1,4 +1,4 @@
-package br.com.desafio.infrastructure.dataprovider.client.dto.produtos;
+package br.com.desafio.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProdutoDTO {
-    private int codigo;
+public class Produto {
+    private Long codigo;
     @JsonProperty("tipo_vinho")
     private String tipoVinho;
     private double preco;

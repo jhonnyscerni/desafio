@@ -1,6 +1,6 @@
 package br.com.desafio.infrastructure.dataprovider.client;
 
-import br.com.desafio.infrastructure.dataprovider.client.dto.clientes.ClienteDTO;
+import br.com.desafio.infrastructure.dataprovider.client.dto.produtos.ProdutoDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -10,5 +10,5 @@ import java.util.List;
 public interface ProdutoClient {
 
     @GetMapping("/produtos-mnboX5IPl6VgG390FECTKqHsD9SkLS.json")
-    List<ClienteDTO> getClientes();
+    List<ProdutoDTO> getProdutos();
 }

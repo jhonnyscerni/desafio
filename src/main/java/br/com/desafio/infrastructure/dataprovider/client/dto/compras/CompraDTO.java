@@ -1,4 +1,4 @@
-package br.com.desafio.infrastructure.dataprovider.client.dto.clientescompras;
+package br.com.desafio.infrastructure.dataprovider.client.dto.compras;
 
 import lombok.*;
 
@@ -6,7 +6,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CompraDTO {
+public class  CompraDTO {
     private String codigo;
     private int quantidade;
 }

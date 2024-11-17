@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClienteResponseDTO {
+public class ClienteFielResponseDTO {
     private String nome;
     private String cpf;
 

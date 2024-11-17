@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 @FeignClient(name = "clienteFeignClient", url = "${feign.client.url.cliente}")
-public interface ClienteFeignClient {
+public interface ClienteClient {
 
     @GetMapping("/clientes-Vz1U6aR3GTsjb3W8BRJhcNKmA81pVh.json")
     List<ClienteDTO> getClientes();

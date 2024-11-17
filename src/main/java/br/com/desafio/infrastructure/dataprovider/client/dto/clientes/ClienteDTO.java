@@ -1,5 +1,6 @@
-package br.com.desafio.infrastructure.dataprovider.client.dto.clientescompras;
+package br.com.desafio.infrastructure.dataprovider.client.dto.clientes;
 
+import br.com.desafio.infrastructure.dataprovider.client.dto.compras.CompraDTO;
 import lombok.*;
 
 import java.util.List;

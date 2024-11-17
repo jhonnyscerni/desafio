@@ -1,4 +1,4 @@
-package br.com.app.cleanarchitecture.infrastructure.config;
+package br.com.desafio.infrastructure.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -13,9 +13,9 @@ public class OpenApiConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Clean Architecture Application API")
+                        .title("Desafio API")
                         .version("1.0")
-                        .description("This is a sample Spring Boot RESTful service using springdoc-openapi and OpenAPI 3."))
-                .addServersItem(new Server().url("http://localhost:8080/api").description("Development server"));
+                        .description("API para gerenciamento de compras e recomendações de vinhos. Inclui endpoints para listar compras, obter a maior compra por ano e obter recomendações de vinhos com base no CPF do cliente. Utiliza Spring Boot e está documentada com OpenAPI 3."))
+                .addServersItem(new Server().url("http://localhost:8080").description("Development server"));
     }
 }

@@ -1,1 +1,19 @@
-spring.application.name=desafio
+spring:
+  application:
+    name: desafio
+  datasource:
+    url: jdbc:postgresql://localhost:5432/desafio
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+feign:
+  client:
+    url:
+      cliente: https://rgr3viiqdl8sikgv.public.blob.vercel-storage.com
+      produto: https://rgr3viiqdl8sikgv.public.blob.vercel-storage.com

@@ -1,11 +1,11 @@
 package br.com.desafio.application.mapper;
 
 import br.com.desafio.application.dto.CompraResponseDTO;
-import br.com.desafio.infrastructure.dataprovider.persistence.entity.CompraEntity;
+import br.com.desafio.domain.model.Compra;
 
-public class ClienteModelMapper {
+public class CompraModelMapper {
 
-    public static CompraResponseDTO fromClienteToCompraResponseDTO(CompraEntity compra) {
+    public static CompraResponseDTO toDomain(Compra compra) {
         return CompraResponseDTO.builder()
                 .clienteNome(compra.getCliente().getNome())
                 .clienteCpf(compra.getCliente().getCpf())
