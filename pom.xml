@@ -83,31 +83,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.pitest</groupId>
-                <artifactId>pitest-maven</artifactId>
-                <version>1.8.0</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.pitest</groupId>
-                        <artifactId>pitest-junit5-plugin</artifactId>
-                        <version>0.14</version>
-                    </dependency>
-                </dependencies>
-                <configuration>
-                    <targetClasses>
-                        <param>br.com.desafio.application.impl.*</param>
-                        <param>br.com.desafio.infrastructure.entrypoint.api.controller.impl.*</param>
-                    </targetClasses>
-                    <targetTests>
-                        <param>br.com.desafio.application.impl.*Test</param>
-                        <param>br.com.desafio.infrastructure.entrypoint.api.controller.impl.*Test</param>
-                    </targetTests>
-                    <excludedClasses>
-                        <param>br.com.desafio.application.mapper.UserModelMapper</param>
-                    </excludedClasses>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 </project>

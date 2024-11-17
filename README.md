@@ -149,3 +149,6 @@ Retorna o Top 3 dos clientes mais fiéis.
       }
     ]
   ```
+## Testes Unitários
+Os testes unitários foram criados para garantir a funcionalidade correta dos casos de uso e dos controladores da aplicação. Utilizamos o framework Mockito para criar mocks e simular o comportamento das dependências externas. A seguir estão alguns exemplos de testes unitários implementados:
+![Testes Unitarios.png](src%2Fmain%2Fresources%2Fdoc%2FTestes%20Unitarios.png)
